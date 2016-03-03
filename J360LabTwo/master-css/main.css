@@ -1,0 +1,27 @@
+<style>
+
+  ul {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  #pages {
+    display:block;
+    text-decoration: none;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    background-color: orange;
+  }
+  #social {
+    disply:inline;
+    width: 15%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .media {
+    float: left;
+  }
