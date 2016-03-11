@@ -1,27 +1,342 @@
 <style>
 
+
+
   ul {
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
+    padding-left, padding-top: 40%;
     list-style-type: none;
+    width: 300px;
+  }
+  a:link {
+      text-decoration: none;
+      color: rgba(25, 168, 13, 0.84);
+  }
+  a:visited {
+      text-decoration: none;
+      color: rgba(25, 168, 13, 0.84);
   }
 
+.topic a{
+  width:200%;
+}
+.topic a:hover{
+  color: rgb(180, 17, 187);
+  background-color: rgba(42, 215, 27, 0.76);
+}
+body {
+  background-image: url("../images/steel.jpg");
+  background-attachment: fixed;
+  font-size: 28px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.philo{
+  background-color: rgba(156, 157, 143, 0.3);
+  display:block;
+  margin-top: 10%;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-left: 5%;
+  width: 80%;
+}
+
+nav li{
+  font-size: 180%;
+}
   #pages {
     display:block;
-    text-decoration: none;
-    width: 20%;
-    margin: 0;
-    padding: 0;
-    background-color: orange;
-  }
-  #social {
-    disply:inline;
-    width: 15%;
+    margin-left: 10%;
+    font-size: 55%;
+    font-weight: bolder;
+    background-color: rgba(238, 143, 17, 0.66);
+    border-style: ridge;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    width: 280px;
   }
-  .media {
+  .social {
+    list-style-type: none;
+    display:inline;
+    width: 20%;
+  }
+
+  .social img {
+    height: 60px;
+    width: 60px;
+  }
+  .stem{
+    padding-left: 10%;
+    margin-bottom: 60%;
+  }
+  .stem li{
+    list-style-type: none;
+    line-height: 220%;
+  }
+  .stem img{
+    width:450px;
+    height:349px;
+  }
+
+  .social li{
+    display:inline;
+  }
+  }
+  .col img {
+    width: 250px;
+    height: 250px;
+    border-style: inset;
+  }
+  .container::after, .row::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+  p {
+    color: rgb(0, 0, 0);
+    opacity: 1;
+  }
+  .container {
+      margin: 10px 4%;
+      padding-right: 38%;
+  }
+  .row {
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+}
+.col {
     float: left;
+    display: block;
+      border-style:ridge;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+}
+.col img {
+ width: 250px;
+ height: 250px;
+}
+.col:last-child {
+    margin: 0;
+}
+.col-4 {
+    width: 100%;
+    margin-right: 0;
+}
+.contact{
+  font-size: 80%;
+  width: 350px;
+  list-style-type: none;
+  margin-bottom: 50%;
+}
+.drinkn {
+  font-size: 100%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.locator {
+display: block;
+  text-align: center;
+  margin-top: 40%;
+  margin-bottom: 60%;
+  font-size: 90%;
+  width: 100%;
+}
+.lowell {
+  margin-bottom: 28%;
+}
+.locator img {
+  padding-left: 10%;
+}
+.logo {
+  padding-left: 5%;
+}
+.logo img {
+  width:300px;
+  height:118px;
+}
+.contact {
+  background-color: rgba(156, 157, 143, 0.3);
+  display: block;
+  margin-top: 15%;
+  margin-left: 10%;
+  width:70%;
+}
+.contact li{
+  font-size: 130%;
+  line-height: 200%;
+}
+.drinkn {
+  font-size: 150%;
+}
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+     margin: 15px auto;
+    }
+    .social {
+      margin-right: 0;
+    }
+    li {
+    font-size: 200%;
+    list-style-type: none;
+    }
+    ul {
+      width: 450px;
+    }
+    .col-4 {
+      width: 31.4666667%;
+      margin-right: 50.6666667%;
+      margin-left: 2%;
+      margin-top: 10%;
+      padding-left: 75px;
+    }
+    .col {
+    }
+    .social {
+      padding-left: 75px;
+    }
+    .social img{
+      width: 80px;
+      height: 80px;
+    }
+    .logo {
+      padding-left: 75px;
+    }
+    .col img {
+     width: 300px;
+     height: 300px;
+   }
+   .drinkn {
+     font-size: 150%;
+   }
+   #pages {
+     width: 500px;
+     font-size: 90%;
+   }
+   .philo{
+     float:left;
+     margin-left: 7%;
+     width: 60%
+     margin-top: 0;
+     margin-bottom: 40%;
+       }
+       .stem img {
+         width:350px;
+         height:271px;
+         float: right;
+       }
+       .stem li{
+         font-size: 140%;
+         float: left;
+         display: inline;
+       }
+
+
   }
+@media (min-width: 992px) {
+  li {
+    font-size: 225%;
+}
+  ul {
+    width: 450px;
+  }
+.container {
+  width: 960px;
+  margin: 20px auto 5px;
+}
+ .col img {
+  width: 250px;
+  height: 250px;
+}
+
+.col-4 {
+      width: 20%;
+      margin-right: 2.1875%;
+  }
+  .logo {
+    padding-left: 95px;
+  }
+  .social {
+    padding-left: 95px;
+    width:100%;
+  }
+  nav {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  .row {
+    padding-left: 5px;
+   }
+
+.col {
+  float: left;
+  margin-top: 0;
+}
+.drinkn {
+  font-size: 250%;
+}
+.philo{
+  display: block;
+  margin-left: 5%;
+  width: 75%;
+  margin-top: 10%;
+  }
+.logo img{
+  width: 400px;
+  height: 158px;
+}
+.stem img {
+  width:370px;
+  height:287px;
+  float: right;
+}
+.stem li{
+  font-size: 150%;
+  float: left;
+  display: block;
+  width: 100%;
+}
+
+
+}
+@media (min-width: 1200px) {
+  li {
+    font-size: 225%;
+  }
+    ul {
+      width: 450px;
+    }
+    .container {
+        width: 1000px;
+        margin: 40px auto 10px;
+    }
+    .drinkn {
+      font-size: 300%;
+    }
+    .philo{
+      float:left;
+      margin-left: 37%;
+      width: 125%;
+      margin-top: 0;
+        }
+    .locator {
+          text-align: center;
+          margin-top: 20%;
+          margin-bottom: 60%;
+          margin-left: 65%;
+          width: 50%;
+        }
+        .logo img{
+          width: 500px;
+          height: 197px;
+          }
+      .stem img {
+        width:550px;
+        height:427px;
+        float: right;
+      }
+      .stem li{
+        font-size: 150%;
+        float: left;
+        display: inline;
+      }
+}
+</style>
